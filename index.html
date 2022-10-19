@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Gasolina</title>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="bomb-photo">
+            <img src="./img/robert-linder-YBWALT8kik8-unsplash.jpg" alt="celular">
+        </div>
+        <div class="description">
+            <div class="group-description">
+                <h3 class="not-account">Quando vale a pena usar um combustível ou outro?</h3>
+                <p class="not-account">A principal diferença entre os dois combustíveis está na proporção entre o preço e o desempenho de cada um.<br> Esta calculadora do Meu Bolso em Dia compara o preço do litro do álcool e da gasolina e mostra qual é o combustível mais vantajoso, financeiramente, no momento.<br><br>
+                O etanol vale a pena quando custar até 70% do valor da gasolina.<br>
+                <p class="not-account">
+                    Preencha os campos abaixo com os preços dos combustíveis que você encontra hoje nos postos e clique no botão “calcular” para saber qual é a melhor opção.
+                </p>
+            </div>
+            <div class="group-input">
+                <div class="group-input2">
+                    <h3>Qual a melhor opção?</h3>
+                    <div class="inputs">
+                     <p>Etanol (preço por litro)</p>
+                     <input class="form-control" type="number" placeholder="R$ 0,00">
+                    </div>
+                    <div class="inputs">
+                      <p>Gasolina (preço por litro)</p>
+                      <input class="form-control2" type="number" placeholder="R$ 0,00">
+                    </div>
+                    <button class="botao" onclick="calc()">Calcular</button>
+
+                </div>
+                
+                <div class="group-input3">
+                    <h3>Entenda como o cálculo é feito</h3>
+                     <p>Dividimos o valor do litro do álcool pelo da gasolina.</p><br>
+                     <p>Quando o resultado é menor que 0,7, a recomendação é abastecer com álcool. Se maior, a recomendação é escolher a gasolina.</p><br>
+                     <p> Exemplo: se o álcool custa R$ 3,29 e a gasolina R$ 4,92, o resultado da divisão do primeiro pelo segundo é 0,67, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.</p><br>
+                     <div class="message1">Vale mais a pena usar Gasolina!!!</div>
+                     <div class="message2">Vale mais a pena usar Etanol!!!</div>
+
+                </div>
+                   
+
+            </div>
+          
+        </div>
+    </main>
+    
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
