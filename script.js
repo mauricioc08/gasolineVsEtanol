@@ -18,4 +18,10 @@ function calc(){
  };
 
 
+ $(function() {
+  $('#Preco1').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+})
+$(function() {
+  $('#Preco2').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+})
 

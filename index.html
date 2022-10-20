@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <title>Conversor de Gasolina</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
         </div>
         <div class="description">
             <div class="group-description">
-                <h3 class="not-account">Quando vale a pena usar um combustível ou outro?</h3>
+                <h3 class="not-account">Qual combustivel está compensando usar?</h3>
                 <p class="not-account">A principal diferença entre os dois combustíveis está na proporção entre o preço e o desempenho de cada um.<br> Esta calculadora do Meu Bolso em Dia compara o preço do litro do álcool e da gasolina e mostra qual é o combustível mais vantajoso, financeiramente, no momento.<br><br>
                 O etanol vale a pena quando custar até 70% do valor da gasolina.<br>
                 <p class="not-account">
@@ -23,13 +25,14 @@
             <div class="group-input">
                 <div class="group-input2">
                     <h3>Qual a melhor opção?</h3>
+                    <h4>Calcule aqui!!</h4>
                     <div class="inputs">
                      <p>Etanol (preço por litro)</p>
-                     <input class="form-control" type="number" placeholder="R$ 0,00">
+                     <input class="form-control" type="text" id="Preco1" value="R$ 0.00" >
                     </div>
                     <div class="inputs">
                       <p>Gasolina (preço por litro)</p>
-                      <input class="form-control2" type="number" placeholder="R$ 0,00">
+                      <input class="form-control2" type="text" id="Preco2" value="R$ 0.00" >
                     </div>
                     <button class="botao" onclick="calc()">Calcular</button>
 
@@ -53,7 +56,7 @@
     
 
 
-    <script src="./script.js"></script>
     
+    <script src="./script.js"></script>
 </body>
 </html>
