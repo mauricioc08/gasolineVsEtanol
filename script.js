@@ -10,13 +10,16 @@ function calc(){
    
    if (resultado >= 0.71){
     document.querySelector('.group-input3').style.display = "block";
+    g1.style.display = "none";
+    g2.style.display = "block";
+    
   } else if(resultado <= 0.70){
     g1.style.display = "block";
     g2.style.display = "none";
     document.querySelector('.group-input3').style.display = "block";
   }
  };
-
+ 
 
  $(function() {
   $('#Preco1').maskMoney({ decimal: '.', thousands: '', precision: 2 });
