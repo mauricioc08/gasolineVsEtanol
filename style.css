@@ -105,26 +105,31 @@ h4 {
 
 
 .message1 {
-    margin: 0;
+    margin-bottom: 30px;
     padding: 20px 100px 10px 5px;
-    font-size: 20px;
-    font-weight: bold;
     background: rgba(255, 3, 3, 0.798);
+    text-align: center;
+}
+
+.message1 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
 }
 
 .message2 {
-    margin: 0;
+    margin-bottom: 30px;
     padding: 20px 100px 10px 5px;
-    font-size: 20px;
-    font-weight: bold;
     background: rgba(44, 140, 0, 0.833);
+    text-align: center;
     display: none;
 }
 
-.ativo {
-    display: block;
+.message2 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
 }
-
 
 .group-description h3 {
     font-size: 20px;
@@ -183,6 +188,16 @@ input {
     .wrapper {
         width: 90%;
     }
+
+    .group-input3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .bomb-photo {
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
@@ -194,15 +209,43 @@ input {
         width: 90%;
     }
 
-    .bomb-photo {
-        display: none;
-    }
-
     .description {
         width: 100%;
     }
 
     .group {
         border: 1px solid transparent;
+    }
+
+    .group-input3 {
+        width: 100%;
+    }
+
+    .message1 h2 {
+        width: 100%;
+    }
+
+    .message2 h2 {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+
+    .message1,
+    .message2 {
+        max-width: 100%;
+    }
+
+    .message1 h2 {
+        font-size: 150%;
+        width: 8rem;
+    }
+
+    .message2 h2 {
+        font-size: 150%;
+        width: 8rem;
     }
 }
